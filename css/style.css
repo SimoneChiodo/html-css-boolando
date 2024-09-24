@@ -1,0 +1,66 @@
+/* reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* utils */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-boolean {
+    height: 25px;
+}
+
+/* fonts */
+@font-face {
+    font-family: Whitney-Bold;
+    src: url(../Fonts/Whitney/whitneysemibold.otf);
+}
+
+/* header */
+header {
+    background-color: #ff6800;
+    color: white;
+    font-family: Whitney-Bold;
+    font-size: 0.9rem;
+}
+
+header > .container > * {
+    flex-basis: 25%;
+}
+
+.header-container {
+    height: 50px;
+}
+
+header .header-sections ul {
+    list-style-type: none;
+    color: inherit;
+
+    display: flex;
+}
+header .header-sections li {
+    padding: 0 5px;
+}
+header .header-sections li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+header .header-logo {
+    text-align: center;
+}
+
+header .header-icons {
+    text-align: right;
+}
+header .header-icons i {
+    padding: 1.5px;
+}
+header .header-icons i:hover {
+    cursor: pointer;
+}
