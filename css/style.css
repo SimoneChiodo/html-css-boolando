@@ -20,6 +20,10 @@
     font-family: Whitney-Bold;
     src: url(../Fonts/Whitney/whitneysemibold.otf);
 }
+@font-face {
+    font-family: Whitney;
+    src: url(../Fonts/Whitney/whitneymedium.otf);
+}
 
 /* header */
 header {
@@ -64,3 +68,105 @@ header .header-icons i {
 header .header-icons i:hover {
     cursor: pointer;
 }
+
+/* main */
+.main-container {
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.card {
+    position: relative;
+    margin-top: 40px;
+}
+
+.card .card-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 350px;
+    max-width: 100%;
+}
+main .card:nth-child(1) .card-image {
+    background-image: url(../img/1.webp);
+}
+main .card:nth-child(2) .card-image {
+    background-image: url(../img/2.webp);
+}
+main .card:nth-child(3) .card-image {
+    background-image: url(../img/3.webp);
+}
+main .card:nth-child(4) .card-image {
+    background-image: url(../img/4.webp);
+}
+main .card:nth-child(5) .card-image {
+    background-image: url(../img/5.webp);
+}
+main .card:nth-child(6) .card-image {
+    background-image: url(../img/6.webp);
+}
+
+.card .card-description h2,
+.card .card-description .new-price,
+.card .card-description .old-price {
+    font-family: Whitney;
+    font-weight: 100;
+    font-size: 1rem;
+}
+.card .card-description h1 {
+    font-family: Whitney-Bold;
+    font-size: 1.1rem;
+}
+.card .card-description .new-price {
+    color: red;
+    font-weight: bold;
+}
+.card .card-description .old-price {
+    text-decoration: line-through;
+}
+
+.card .card-overlay .card-prefer {
+    background-color: white;
+    padding: 5px 15px;
+    font-size: 2rem;
+
+    position: absolute;
+    top: 5px;
+    right: 0px;
+}
+.card .card-overlay .card-prefer:hover {
+    color: red;
+}
+
+.card .card-overlay .card-discount {
+    background-color: red;
+    color: white;
+    padding: 3px 10px;
+
+    position: absolute;
+    bottom: 100px;
+    left: 0px;
+}
+.card .card-overlay .card-sost {
+    background-color: green;
+    color: white;
+    padding: 3px 10px;
+    font-weight: bold;
+
+    position: absolute;
+    bottom: 100px;
+    left: 60px;
+}
+.card .card-overlay .card-sost-special {
+    background-color: green;
+    color: white;
+    padding: 3px 10px;
+    font-weight: bold;
+
+    position: absolute;
+    bottom: 100px;
+    left: 0px;
+}
+
+/* footer */
