@@ -5,6 +5,23 @@
     padding: 0;
 }
 
+ul {
+    list-style-type: none;
+    color: inherit;
+
+    display: flex;
+}
+li {
+    padding: 0 5px;
+}
+ul li:first-child {
+    padding-left: 0;
+}
+li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 /* utils */
 .container {
     display: flex;
@@ -39,20 +56,6 @@ header > .container > * {
 
 .header-container {
     height: 50px;
-}
-
-header .header-sections ul {
-    list-style-type: none;
-    color: inherit;
-
-    display: flex;
-}
-header .header-sections li {
-    padding: 0 5px;
-}
-header .header-sections li:hover {
-    cursor: pointer;
-    text-decoration: underline;
 }
 
 header .header-logo {
@@ -170,3 +173,34 @@ main .card:nth-child(6) .card-image {
 }
 
 /* footer */
+footer {
+    color: white;
+    background-color: #1a1a1a;
+    font-family: Whitney;
+}
+
+.footer-container {
+    height: 70px;
+    justify-content: space-between;
+    margin: 0 12.5%;
+}
+
+.footer-container .footer-link h3 {
+    font-size: 1.1rem;
+    font-family: Whitney-Bold;
+}
+.footer-container .footer-link li {
+    font-size: 0.9rem;
+    padding-top: 5px;
+}
+
+.footer-container .footer-social h3 {
+    font-size: 0.9rem;
+    font-family: Whitney-Bold;
+}
+.footer-container .footer-social i {
+    font-size: 1.2rem;
+    padding: 2px;
+    padding-top: 7px;
+    cursor: pointer;
+}
