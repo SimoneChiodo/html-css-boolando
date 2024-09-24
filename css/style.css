@@ -83,6 +83,7 @@ header .header-icons i:hover {
     flex-wrap: wrap;
     gap: 15px;
     margin-bottom: 40px;
+    width: 1080px;
 }
 
 .card {
