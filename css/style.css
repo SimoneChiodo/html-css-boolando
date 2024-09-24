@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+main {
+    padding-top: 50px;
+}
+
 ul {
     list-style-type: none;
     color: inherit;
@@ -48,6 +52,8 @@ header {
     color: white;
     font-family: Whitney-Bold;
     font-size: 0.9rem;
+    width: 100%;
+    position: fixed;
 }
 
 header > .container > * {
@@ -108,6 +114,24 @@ main .card:nth-child(5) .card-image {
 }
 main .card:nth-child(6) .card-image {
     background-image: url(../img/6.webp);
+}
+main .card:nth-child(1):hover .card-image {
+    background-image: url(../img/1b.webp);
+}
+main .card:nth-child(2):hover .card-image {
+    background-image: url(../img/2b.webp);
+}
+main .card:nth-child(3):hover .card-image {
+    background-image: url(../img/3b.webp);
+}
+main .card:nth-child(4):hover .card-image {
+    background-image: url(../img/4b.webp);
+}
+main .card:nth-child(5):hover .card-image {
+    background-image: url(../img/5b.webp);
+}
+main .card:nth-child(6):hover .card-image {
+    background-image: url(../img/6b.webp);
 }
 
 .card .card-description h2,
@@ -177,6 +201,7 @@ footer {
     color: white;
     background-color: #1a1a1a;
     font-family: Whitney;
+    padding-bottom: 10px;
 }
 
 .footer-container {
